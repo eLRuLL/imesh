@@ -20,3 +20,5 @@ main
 
 # Eclipse
 *project
+Debug/
+Release/

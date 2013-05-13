@@ -11,3 +11,11 @@ void CShape::setValues(int width,int height){
 	this->width = width;
 	this->height = height;
 }
+
+void CShape::setCenter(CPoint p){
+	this->center = p;
+}
+
+void CShape::setCenter(int x,int y){
+	setCenter(CPoint(x,y));
+}

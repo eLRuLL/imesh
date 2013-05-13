@@ -16,6 +16,6 @@ double CRectangle::area(){
 	return width*height;
 }
 
-void CRectangle::setCenter(CPoint p){
-	center = p;
+bool CRectangle::isInside(CPoint p){
+	return false;
 }

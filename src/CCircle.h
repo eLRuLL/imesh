@@ -15,6 +15,7 @@ class CCircle: public CShape{
 public:
 	CCircle(int, int);
 	double area();
+	bool isInside(CPoint);
 };
 
 #endif /* CCIRCLE_H_ */

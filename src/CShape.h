@@ -16,12 +16,10 @@ protected:
 	CPoint center;
 public:
 	void setValues(int,int);
-	void setCenter(CPoint);
-	void setCenter(int,int);
+	void setCenter(CPoint*);
 
 	virtual double area()=0;
-	virtual bool isInside(CPoint)=0;
-
+	virtual bool isInside(CPoint*)=0;
 };
 
 #endif /* CSHAPE_H_ */

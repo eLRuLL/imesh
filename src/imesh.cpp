@@ -13,7 +13,10 @@
 #include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
 #include <CGAL/Projection_traits_xy_3.h>
 #include <CGAL/Delaunay_triangulation_2.h>
+
 #include "Smoother_2.h"
+#include "CRectangle.h"
+#include "CPoint2.h"
 
 typedef CGAL::Exact_predicates_inexact_constructions_kernel K;
 
@@ -38,6 +41,10 @@ int main(int argc, char** argv) {
 		Point p = (*pit);
 		printf("%d: %d %d\n",i,(int)(p.x()),(int)(p.y()));
 	}
+
+	CShape* shape = new CRectangle(3,3);
+	shape->setCenter(new CPoint_2(1,1));
+	cout<<shape->isInside(new CPoint_2(1,1))<<endl;
 
 	return 0;
 }

@@ -16,6 +16,6 @@ double CRectangle::area(){
 	return width*height;
 }
 
-bool CRectangle::isInside(CPoint p){
+bool CRectangle::isInside(CPoint* p){
 	return false;
 }

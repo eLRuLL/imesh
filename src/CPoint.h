@@ -11,13 +11,8 @@
 class CPoint {
 public:
 	int x;
-	int y;
-	int z;
-
 	CPoint();
-	CPoint(int,int);
-	CPoint(int,int,int);
-
+	CPoint(int x);
 
 	bool operator==(const CPoint&) const;
 	bool operator!=(const CPoint&) const;

@@ -15,7 +15,7 @@ public:
 	CRectangle(int, int);
 
 	double area();
-	bool isInside(CPoint);
+	bool isInside(CPoint*);
 };
 
 #endif /* CRECTANGLE_H_ */

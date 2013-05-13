@@ -16,6 +16,6 @@ double CCircle::area(){
 	return M_PI*(width/2)*(width/2);
 }
 
-bool CCircle::isInside(CPoint p){
+bool CCircle::isInside(CPoint* p){
 	return false;
 }

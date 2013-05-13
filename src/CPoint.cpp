@@ -8,27 +8,15 @@
 #include "CPoint.h"
 
 CPoint::CPoint() {
-	x = y = z = 0;
+	x = 0;
 }
 
-CPoint::CPoint(int x, int y){
+CPoint::CPoint(int x){
 	this->x = x;
-	this->y = y;
-	this->z = 0;
-}
-
-CPoint::CPoint(int x, int y, int z){
-	this->x = x;
-	this->y = y;
-	this->z = z;
 }
 
 bool CPoint::operator==(const CPoint &point) const{
-	if(x==point.x && y==point.y && z==point.z){
-		return true;
-	}else{
-		return false;
-	}
+	return (x==point.x);
 }
 
 bool CPoint::operator!=(const CPoint &point) const{
@@ -37,7 +25,5 @@ bool CPoint::operator!=(const CPoint &point) const{
 
 CPoint& CPoint::operator =(const CPoint& point){
 	x = point.x;
-	y = point.y;
-	z = point.z;
 	return *this;
 }

@@ -8,11 +8,14 @@
 #ifndef CSHAPE_H_
 #define CSHAPE_H_
 
+#include "CPoint.h"
+
 class CShape {
 protected:
 	int width, height;
+	CPoint center;
 public:
-	void setValues(int width,int height);
+	void setValues(int,int);
 };
 
 #endif /* CSHAPE_H_ */

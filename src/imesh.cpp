@@ -26,12 +26,6 @@ typedef Delaunay::Point_iterator							Point_iterator;
 using namespace std;
 
 
-void draw(void){
-	glClearColor(0,1,0,1);
-	glClear(GL_COLOR_BUFFER_BIT);
-	glFlush();
-}
-
 int main(int argc, char** argv) {
 
 	Smoother_2 smother;
@@ -44,4 +38,6 @@ int main(int argc, char** argv) {
 		Point p = (*pit);
 		printf("%d: %d %d\n",i,(int)(p.x()),(int)(p.y()));
 	}
+
+	return 0;
 }

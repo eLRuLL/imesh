@@ -8,10 +8,12 @@
 #include "Smoother_2.h"
 
 Smoother_2::Smoother_2() {
+	this->shape = NULL;
 	height = width = 1000;
 }
 
 Smoother_2::Smoother_2(int height,int width){
+	this->shape = NULL;
 	this->height = height;
 	this->width = width;
 }
@@ -33,3 +35,6 @@ Delaunay* Smoother_2::getTriangulation(){
 	return &(this->Triangulation);
 }
 
+void Smoother_2::setShape(CShape* shape){
+	this->shape = shape;
+}

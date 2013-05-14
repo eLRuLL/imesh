@@ -44,7 +44,10 @@ int main(int argc, char** argv) {
 
 	CShape* shape = new CRectangle(3,3);
 	shape->setCenter(new CPoint_2(1,1));
-	cout<<shape->isInside(new CPoint_2(1,1))<<endl;
+
+
+	smother.setShape(shape);
+	cout<<smother.getShape()->isInside(new CPoint_2(1,1))<<endl;
 
 	return 0;
 }

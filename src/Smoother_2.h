@@ -14,6 +14,8 @@
 #include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
 #include <CGAL/Delaunay_triangulation_2.h>
 
+#include "CShape.h"
+
 typedef CGAL::Exact_predicates_inexact_constructions_kernel 	K;
 typedef CGAL::Delaunay_triangulation_2<K>						Delaunay;
 
@@ -23,7 +25,7 @@ private:
 	int height;
 	int width;
 	Delaunay Triangulation;
-
+	CShape* shape;
 
 public:
 	Smoother_2();
@@ -33,7 +35,10 @@ public:
 	void loadRandomPoints(int n = 1000);
 	Delaunay* getTriangulation();
 
-
+	void setShape(CShape*);
+	CShape* getShape(){
+		return shape;
+	}
 };
 
 #endif /* SMOOTHER_H_ */

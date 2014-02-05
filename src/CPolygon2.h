@@ -15,7 +15,7 @@
 class CPolygon2: public CPolygon {
 public:
 	CPolygon2();
-	virtual ~CPolygon2();
+	~CPolygon2();
 
 	bool isInside(CPoint*);
 };

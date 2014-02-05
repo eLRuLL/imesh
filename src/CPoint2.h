@@ -16,7 +16,7 @@ public:
 
 	CPoint_2();
 	CPoint_2(int,int);
-	virtual ~CPoint_2();
+	~CPoint_2();
 
 	bool operator==(const CPoint_2&) const;
 	CPoint_2& operator=(const CPoint_2&);

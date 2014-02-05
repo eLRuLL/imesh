@@ -11,6 +11,7 @@ CPolygon2::CPolygon2() {
 }
 
 CPolygon2::~CPolygon2() {
+	polygon.clear();
 }
 
 bool CPolygon2::isInside(CPoint* point){
@@ -39,5 +40,5 @@ bool CPolygon2::isInside(CPoint* point){
 		p1 = p2;
 	}
 
-	return (!(counter % 2));
+	return (counter % 2);
 }

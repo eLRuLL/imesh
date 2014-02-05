@@ -17,7 +17,7 @@ CPoint_2::CPoint_2(int x,int y){
 }
 
 CPoint_2::~CPoint_2() {
-	// TODO Auto-generated destructor stub
+
 }
 
 bool CPoint_2::operator==(const CPoint_2 &point) const{
